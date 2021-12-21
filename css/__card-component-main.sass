@@ -1,0 +1,65 @@
+.main
+	background: $very-light-gray
+.container
+	padding: 5em 1.5em
+	height: 100%
+	display: grid
+	justify-content: center
+	align-content: center
+	grid-template-columns: minmax(200px, 320px)
+	grid-template-rows: repeat(3, 1fr)
+
+.card
+	padding: 3em
+	color: #fff
+	font-family: 'Lexend Deca', sans-serif
+	
+	&__title
+		font-family: 'Big Shoulders Display', cursive
+		text-transform: uppercase
+		color: $very-light-gray
+		margin-top: 1em
+	&__text
+		font-size: 15px
+		color: $transparent-white
+		line-height: 1.5rem
+	&__btn
+		margin-top: 15px
+		border: none
+		background: $very-light-gray
+		padding: 15px 30px
+		font-size: 15px
+		border-radius: 30px
+		cursor: pointer
+		border: 2px solid #fff
+		&:active
+			background: transparent
+			color: #fff
+
+.card:first-child
+	background: $bright-orange
+	border-radius: 10px 10px 0 0
+
+.card:nth-child(2)
+	background: $dark-cyan
+	
+.card:nth-child(3)
+	background: $very-dark-cyan
+	border-radius: 0 0 10px 10px
+
+.card__btn--sedans
+	color: $bright-orange
+
+.card__btn--suvs
+	color: $dark-cyan
+
+.card__btn--luxury
+	color: $very-dark-cyan	
+
+
+.attribution
+	font-size: 12px
+	position: fixed
+	left: 40%
+	bottom: 0
+

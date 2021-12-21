@@ -1,0 +1,21 @@
+@media screen and (min-width: 895px)
+	.main
+		height: 100vh
+		min-height: 520px
+
+	.container
+		padding: 0 20px
+		grid-template-columns: repeat(3, minmax(200px, 305px))
+		grid-template-rows: auto
+
+	.card
+		&__btn
+			margin-top: 5em
+
+	.card:first-child
+		border-radius: 10px 0 0 10px
+		
+	.card:nth-child(3)
+		background: $very-dark-cyan
+		border-radius: 0 10px 10px 0
+
